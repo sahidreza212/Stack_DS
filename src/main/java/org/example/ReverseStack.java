@@ -4,6 +4,7 @@ import java.util.Stack;
 
 public class ReverseStack {
 
+    // push at bottom
     public static void pushAtBottom(int data , Stack<Integer> s){
 
         if(s.isEmpty()){
@@ -15,6 +16,7 @@ public class ReverseStack {
         s.push(top);
     }
 
+    // reverse the stack with the help of pushAtBottom function
     public static void reverse(Stack<Integer>s){
 
         if(s.isEmpty()){

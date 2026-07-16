@@ -1,6 +1,6 @@
 package org.example;
 
-public class StackClass {
+public class StackClassLL {
 
     static class Node {
         int data;
@@ -20,6 +20,7 @@ public class StackClass {
              return head == null;
         }
 
+        // push
         public static void push(int data){
             Node newNode = new Node(data);
             if(isEmpty()){
@@ -30,6 +31,7 @@ public class StackClass {
             head = newNode;
         }
 
+        // pop
         public static int pop(){
             if(isEmpty()){
                 return  -1;
@@ -39,6 +41,7 @@ public class StackClass {
             return top;
         }
 
+        // peek
         public static int peek(){
             if(isEmpty()){
                 return -1;
